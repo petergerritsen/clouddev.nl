@@ -20,7 +20,7 @@ footer: CloudDev
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: weblog
-	url: http://blog.petergerritsen.nl
+    url: http://blog.petergerritsen.nl
   - title: linkedin
     url: https://nl.linkedin.com/in/petergerritsen80
   - title: github
