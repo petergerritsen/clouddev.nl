@@ -8,7 +8,7 @@ description: "CloudDev - A Cloud development services company offering .Net and 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#00aa88'
 
 # Footer settings
 footer: CloudDev
