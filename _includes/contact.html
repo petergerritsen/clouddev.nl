@@ -3,9 +3,16 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
-                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                <p>
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/><br/>
+                    <span>KvK Utrecht: 64507300</span><br/>
+                    <span>BTW nummer: NL1753.62.099.B01</span><br/>
+                    <span>IBAN: NL22 KNAB 0254 8723 44</span>
                 </p>
                 <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://blog.petergerritsen.nl" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-edit fa-fw"></i> <span class="network-name">weblog</span></a>
+                    </li>
                     {% for network in site.social %}
                     <li>
                         <a href="{{ network.url }}" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
