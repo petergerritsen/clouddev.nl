@@ -2,7 +2,7 @@
 title: CloudDev
 email: peter@clouddev.nl
 url: http://clouddev.nl
-baseurl: /
+baseurl: 
 description: "CloudDev - A Cloud development services company offering .Net and Azure development, architecture and consultancy"
 
 # Color settings
