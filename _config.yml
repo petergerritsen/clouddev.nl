@@ -1,8 +1,8 @@
 # Site settings
 title: CloudDev
 email: peter@clouddev.nl
-url: http://petergerritsen.github.io/clouddev.nl
-baseurl: /clouddev.nl
+url: http://clouddev.nl
+baseurl: /
 description: "CloudDev - A Cloud development services company offering .Net and Azure development, architecture and consultancy"
 
 # Color settings
