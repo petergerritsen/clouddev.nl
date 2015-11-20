@@ -1,9 +1,9 @@
 # Site settings
-title: CloudDev
+title: CloudDev - Peter Gerritsen, freelance Azure and .Net developer based in Utrecht
 email: peter@clouddev.nl
 url: http://clouddev.nl
 baseurl: 
-description: "CloudDev - A Cloud development services company offering .Net and Azure development, architecture and consultancy"
+description: "CloudDev - A Cloud development services company offering freelance .Net and Azure development, architecture and consultancy"
 
 # Color settings
 color:
