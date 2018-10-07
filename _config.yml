@@ -23,8 +23,6 @@ social:
     url: https://nl.linkedin.com/in/petergerritsen80
   - title: github
     url: https://github.com/petergerritsen
-  - title: twitter
-    url: https://twitter.com/pjotr80
 
 # Build settings
 markdown: kramdown
