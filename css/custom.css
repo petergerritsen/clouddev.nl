@@ -33,3 +33,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(0, 170, 136, 0.8);
 }
+
+.modal-body p, .modal-body ul {
+  text-align: left;
+}
