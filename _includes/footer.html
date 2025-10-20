@@ -1,4 +1,14 @@
 <!-- Footer-->
-<footer class="footer bg-black small text-center text-white-50">
-    <div class="container px-4 px-lg-5">Copyright &copy; {{ site.footer }} 20{{ site.time | date: '%y' }}</div>
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; {{ site.footer }} 20{{ site.time | date: '%y' }}</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="http://blog.petergerritsen.nl"><i class="fa fa-pencil"></i></a>
+                {% for network in site.social %}
+                <a class="btn btn-dark btn-social mx-2" href="{{ network.url }}"><i class="fab fa-{{ network.title }}"></i></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </footer>
