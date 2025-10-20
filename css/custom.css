@@ -1,0 +1,39 @@
+:root {
+  --bs-link-color: #00aa88;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #00aa88;
+  --bs-btn-border-color: #00aa88;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #006680;
+  --bs-btn-hover-border-color: #006680;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #006680;
+  --bs-btn-active-border-color: #006680;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #00aa88;
+  --bs-btn-disabled-border-color: #00aa88;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #00aa88;
+}
+
+.text-primary {
+  color: #00aa88 !important;
+}
+
+header.masthead .masthead-heading {
+  font-size: 2rem;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(0, 170, 136, 0.8);
+}
+
+.modal-body p, .modal-body ul {
+  text-align: left;
+}
