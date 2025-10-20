@@ -2849,19 +2849,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #00c19a;
+  --bs-btn-border-color: #00c19a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
-  --bs-btn-focus-shadow-rgb: 123, 175, 172;
+  --bs-btn-hover-bg: #00aa88;
+  --bs-btn-hover-border-color: #00aa88;
+  --bs-btn-focus-shadow-rgb: 0, 193, 154; /* rgb(#00c19a) */
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #50817e;
-  --bs-btn-active-border-color: #4b7976;
+  --bs-btn-active-bg: #007a99;
+  --bs-btn-active-border-color: #007a99;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #64a19d;
-  --bs-btn-disabled-border-color: #64a19d;
+  --bs-btn-disabled-bg: #00c19a;
+  --bs-btn-disabled-border-color: #00c19a;
 }
 
 .btn-secondary {
@@ -3800,10 +3800,10 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
-  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.85);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.95);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
@@ -11041,15 +11041,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #00c19a;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #00c19a;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #00c19a;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #00c19a;
   }
 }
 
@@ -11076,15 +11076,45 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
+  font-family: "Ubuntu-Title", "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 4rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  background: none;
+  -webkit-text-fill-color: initial;
+  -webkit-background-clip: initial;
+          background-clip: initial;
+}
+
+/* primary (blue/teal) part */
+.masthead h1 .text-clouddev-blue {
+  background: linear-gradient(#00a8b5, #007a99);
   -webkit-background-clip: text;
           background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* very thin brighter outline */
+  -webkit-text-stroke: 0.8px #999999; /* WebKit browsers */
+          text-stroke: 0.8px #999999; /* non-standard but harmless */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
+
+/* fallback / second part: keep the existing white/soft gradient look */
+.masthead h1 span:not(.text-clouddev-blue) {
+  background: linear-gradient(#00c19a , #00aa88);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* very thin brighter outline */
+  -webkit-text-stroke: 0.8px #999999; /* WebKit browsers */
+          text-stroke: 0.8px #999999; /* non-standard but harmless */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -11142,7 +11172,7 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 8rem 0 4rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -11161,7 +11191,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 0.5rem;
 }
 .contact-section .card {
   border: 0;
@@ -11200,4 +11230,13 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Title';
+    src: url('/assets/fonts/Ubuntu-Title.woff2') format('woff2'),
+        url('/assets/fonts/Ubuntu-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
